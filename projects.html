@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>franco.dev - Proyectos</title>
+    <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>FRANCO.DEV</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./index.html">Sobre Mi</a></li>
+                <li><a href="./projects.html" class="isActive">Proyectos</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="menu-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-menu-2">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M21 6a1 1 0 0 1 -1 1h-16a1 1 0 1 1 0 -2h16a1 1 0 0 1 1 1" />
+                <path d="M21 12a1 1 0 0 1 -1 1h-16a1 1 0 0 1 0 -2h16a1 1 0 0 1 1 1" />
+                <path d="M21 18a1 1 0 0 1 -1 1h-16a1 1 0 0 1 0 -2h16a1 1 0 0 1 1 1" />
+            </svg></button>
+    </header>
+    <div class="sidebar">
+        <button class="menu-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-x">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M6.707 5.293l5.293 5.292l5.293 -5.292a1 1 0 0 1 1.414 1.414l-5.292 5.293l5.292 5.293a1 1 0 0 1 -1.414 1.414l-5.293 -5.292l-5.293 5.292a1 1 0 1 1 -1.414 -1.414l5.292 -5.293l-5.292 -5.293a1 1 0 0 1 1.414 -1.414" />
+            </svg></button>
+        <nav>
+            <ul class="sidebar-links">
+                <li><a href="./index.html">Sobre Mi</a></li>
+                <li><a href="./projects.html">Proyectos</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Proyectos</h1>
+        <p>Aquí encontrarás una selección de mis proyectos más destacados, cada uno representando un paso importante en
+            mi viaje como desarrollador. Desde aplicaciones web hasta proyectos de código abierto, cada uno refleja mi
+            pasión por la tecnología y mi compromiso con la excelencia.</p>
+        <div class="filter">
+            <ul>
+                <li>Todos</li>
+                <li>Web</li>
+                <li>Mobile</li>
+            </ul>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div>
+                    <a href=""><img class="project-img" src="./resources/Yo.jpg" alt=""></a>
+                </div>
+                <div class="project-text">
+                    <h2>Proyecto 1: Portafolio Personal</h2>
+                    <p>Un sitio web personal diseñado para mostrar mis habilidades, experiencia y proyectos. Construido
+                        con HTML, CSS y JavaScript, este portafolio es una representación visual de mi trayectoria
+                        profesional.</p>
+                    <a href="#">Ver detalles<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l14 0" />
+                            <path d="M13 18l6 -6" />
+                            <path d="M13 6l6 6" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div>
+                    <a href=""><img class="project-img" src="./resources/Yo.jpg" alt="E-commerce Platform"></a>
+                </div>
+                <div class="project-text">
+                    <h2>Proyecto 2: Plataforma de E-commerce</h2>
+                    <p>Una tienda en línea completa con carrito de compras, pasarela de pagos integrada y un panel de
+                        administración para gestionar productos. Desarrollada utilizando React, Node.js y MongoDB.</p>
+                    <a href="#">Ver detalles<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l14 0" />
+                            <path d="M13 18l6 -6" />
+                            <path d="M13 6l6 6" />
+                        </svg></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <a href=""><img class="project-img" src="./resources/Yo.jpg" alt="Task Management App"></a>
+                </div>
+                <div class="project-text">
+                    <h2>Proyecto 3: Aplicación de Gestión de Tareas</h2>
+                    <p>Un organizador de tareas diario que permite a los usuarios crear tableros visuales, asignar
+                        prioridades y realizar un seguimiento del progreso mediante gráficos interactivos. Construido
+                        con Vue.js y Firebase.</p>
+                    <a href="#">Ver detalles<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l14 0" />
+                            <path d="M13 18l6 -6" />
+                            <path d="M13 6l6 6" />
+                        </svg></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <a href=""><img class="project-img" src="./resources/Yo.jpg" alt="Weather Dashboard"></a>
+                </div>
+                <div class="project-text">
+                    <h2>Proyecto 4: Dashboard del Clima</h2>
+                    <p>Una aplicación meteorológica que consume una API externa para mostrar el pronóstico del tiempo en
+                        tiempo real de cualquier ciudad del mundo, incluyendo mapas interactivos y datos de calidad del
+                        aire.</p>
+                    <a href="#">Ver detalles<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l14 0" />
+                            <path d="M13 18l6 -6" />
+                            <path d="M13 6l6 6" />
+                        </svg></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <a href=""><img class="project-img" src="./resources/Yo.jpg" alt="Recipe Finder Mobile App"></a>
+                </div>
+                <div class="project-text">
+                    <h2>Proyecto 5: Buscador de Recetas Móvil</h2>
+                    <p>Una aplicación móvil híbrida diseñada para los amantes de la cocina. Permite buscar recetas
+                        basadas en los ingredientes que ya tienes en casa. Desarrollada con React Native y una base de
+                        datos local SQLite.</p>
+                    <a href="#">Ver detalles<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l14 0" />
+                            <path d="M13 18l6 -6" />
+                            <path d="M13 6l6 6" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-div">
+            <h2>¿Tienes un proyecto en mente?</h2>
+            <p>Estoy disponible para nuevos desafíos y colaboraciones que requieran un enfoque centrado en el  usuario y resultados de alta calidad.</p>
+            <button class="btn-primary">Hablemos ahora</button>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div>
+            <h1>FRANCO.DEV</h1>
+            <span>&copy; 2026 Franco Dev. Trabajo con precisión</span>
+        </div>
+        <ul class="footer-links">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

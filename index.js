@@ -1,26 +1,51 @@
-    const burguerButton = document.querySelectorAll(".menu-button")
-    const sidebar = document.querySelector(".sidebar")
+document.addEventListener("DOMContentLoaded", () => {
+    const burgerButtons = document.querySelectorAll(".menu-button");
+    const sidebar = document.querySelector(".sidebar");
 
-    burguerButton.forEach(button => {
-    button.addEventListener("click", () => {
-        sidebar.classList.toggle("opened")
-    })})
+    burgerButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            sidebar.classList.toggle("opened");
+        });
+    });
 
-    const navLinks = document.querySelectorAll(".nav-links a")
-    navLinks.forEach(link => {
-        link.addEventListener("click", () => {
-            link.classList.add("isActive")
-            navLinks.forEach(otherLink => {
-                if (otherLink !== link) {
-                    otherLink.classList.remove("isActive")
-                }
-            })
-        })
-    })
     
-    const sidebarLinks = document.querySelectorAll(".sidebar-links a")
+    const sidebarLinks = document.querySelectorAll(".sidebar-links a");
     sidebarLinks.forEach(link => {
         link.addEventListener("click", () => {
-            sidebar.classList.toggle("opened")
-        })
-    })
+            sidebar.classList.remove("opened");
+        });
+    });
+
+
+    const navLinks = document.querySelectorAll(".nav-links a");
+    
+    const sections = document.querySelectorAll("#about, #projects, #contact");
+
+    const observerOptions = {
+        root: null,
+        rootMargin: "-25% 0px -70% 0px", 
+        threshold: 0
+    };
+
+    const observerCallback = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute("id");
+
+                navLinks.forEach(link => {
+                    if (link.getAttribute("href") === `#${id}`) {
+                        link.classList.add("isActive");
+                    } else {
+                        link.classList.remove("isActive");
+                    }
+                });
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sections.forEach(section => {
+        if (section) observer.observe(section);
+    });
+});

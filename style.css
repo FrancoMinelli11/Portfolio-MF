@@ -3,9 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
+[id] {
+    scroll-margin-top: 70px;
+}
 body {
+    
     color: #1F2937;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: azure;
@@ -192,7 +197,7 @@ p {
     transition: background-color 0.2s ease;
     
     &:hover {
-        background-color: #1F2937;
+        background-color: #007acc;
     }
 }
 
@@ -314,7 +319,7 @@ p {
     margin: 40px 0px;
     padding: 20px;
     border-radius: 5px;
-    background-color: rgb(167, 217, 228, 0.4);
+    background-color: rgba(230, 238, 255, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
